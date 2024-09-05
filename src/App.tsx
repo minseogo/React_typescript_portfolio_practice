@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import MainSection from './components/Main';
 import AboutSection from './components/About';
-
+import ResumeSection from './components/Resume';
 
 const App: React.FC = () => {
   return (
@@ -11,6 +11,7 @@ const App: React.FC = () => {
       <Navbar />
       <MainSection />
       <AboutSection />
+      <ResumeSection />
       <Footer />
     </div>
   );
