@@ -1,27 +1,31 @@
 import React, { useEffect, useRef } from 'react';
 import 'aos/dist/aos.css'; // AOS 스타일 시트 추가
+import Javascriptsvg from '../img/javascript_logo.svg';
+import Jquerysvg from '../img/jquery_logo.svg';
+import Csssvg from '../img/css_logo.svg'
+import '../css/main.css';
 
 const AboutSection: React.FC = () => {
   const skillsRef = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    if (skillsRef.current) {
-      const skillsAnimation = skillsRef.current.querySelectorAll('.skills-animation');
-      skillsAnimation.forEach((item) => {
-        new (window as any).Waypoint({
-          element: item as HTMLElement,
-          offset: '80%',
-          handler: function (direction: string) {
-            const progress = (item as HTMLElement).querySelectorAll('.progress .progress-bar');
-            progress.forEach(el => {
-              const progressBar = el as HTMLElement;
-              progressBar.style.width = progressBar.getAttribute('aria-valuenow') + '%';
-            });
-          }
-        });
-      });
-    }
-  }, []);
+//   useEffect(() => {
+//     if (skillsRef.current) {
+//       const skillsAnimation = skillsRef.current.querySelectorAll('.skills-animation');
+//       skillsAnimation.forEach((item) => {
+//         new (window as any).Waypoint({
+//           element: item as HTMLElement,
+//           offset: '80%',
+//           handler: function (direction: string) {
+//             const progress = (item as HTMLElement).querySelectorAll('.progress .progress-bar');
+//             progress.forEach(el => {
+//               const progressBar = el as HTMLElement;
+//               progressBar.style.width = progressBar.getAttribute('aria-valuenow') + '%';
+//             });
+//           }
+//         });
+//       });
+//     }
+//   }, []);
 
   return (
     <section id="about" className="about section">
@@ -42,13 +46,16 @@ const AboutSection: React.FC = () => {
 
             <div className="skills-content skills-animation">
               <h5>Skills</h5>
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>React</div>
-                <div>Java Script</div>
-                <div>jQuery</div>
-                <div>CAFE24 플랫폼</div>
-                <div>그누보드 플랫폼</div>
+              <div className='d-flex flex-row flex-wrap align-items-center justify-content-between'>
+                <div className='col-4 text-center'><i className="bi bi-filetype-html"></i></div>
+                <div className='col-4 text-center'><img className='csslogo' src={Csssvg} alt="Css svg" /></div>
+                <div className='col-4 text-center'><i className="bi bi-filetype-scss"></i></div>
+                <div className='col-4 text-center mt-5'><img className='javascriptlogo' src={Javascriptsvg} alt="Javascrip svg" /></div>
+                <div className='col-4 text-center mt-5'><img src={Jquerysvg} alt="Jquery svg" /></div>
+                <div className='col-4 text-center mt-5'><img src={`${process.env.PUBLIC_URL}/img/Cafe24_logo.png`} alt="Cafe24 png" /></div>
+                <div className='col-4 text-center mt-5'><img src={`${process.env.PUBLIC_URL}/img/Gnuboard_logo.png`} alt="Gnuboard png" /></div>
+              </div>
+
 
             </div>
           </div>
