@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import MainSection from './components/Main';
 import AboutSection from './components/About';
 import ResumeSection from './components/Resume';
+import PortfolioSection from './components/Portfolio';
 
 const App: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const App: React.FC = () => {
       <MainSection />
       <AboutSection />
       <ResumeSection />
+      <PortfolioSection />
       <Footer />
     </div>
   );
