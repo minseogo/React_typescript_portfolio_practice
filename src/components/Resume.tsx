@@ -11,8 +11,8 @@ const ResumeSection: React.FC = () => {
       {/* End Section Title */}
 
       <div className="container">
-        <div className="row">
-          <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div className="d-flex flex-wrap align-content-sm-center align-content-start flex-column flex-md-row justify-content-md-evenly">
+          <div className="" data-aos="fade-up" data-aos-delay="100">
             <h3 className="resume-title">Education</h3>
             <div className="resume-item">
             <h4>웹퍼블리셔(UI/UX)&프론트엔드개발</h4>
@@ -39,7 +39,7 @@ const ResumeSection: React.FC = () => {
             {/* End Resume Item */}
           </div>
 
-          <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div className="pt-md-0 pt-5" data-aos="fade-up" data-aos-delay="200">
             <h3 className="resume-title">Work Experience</h3>
             <div className="resume-item">
               <h4>온라인 MD</h4>
@@ -59,44 +59,42 @@ const ResumeSection: React.FC = () => {
               <h5>2022.10 ~ 2023.05</h5>
               <p><em>Cocomelt / 영국, 런던</em></p>
             </div>
-            {/* End Resume Item */}
+            
             <div className="resume-item">
               <h4>바리스타</h4>
               <h5>2022.05 ~ 2022.08</h5>
               <p><em>Knockbox / 영국, 런던</em></p>
             </div>
-            {/* End Resume Item */}
+            
             <div className="resume-item">
               <h4>온라인MD 인턴</h4>
               <h5>2021.12 ~ 2022.03</h5>
               <p><em>Globalon / 영국, 런던</em></p>
             </div>
-            {/* End Resume Item */}
+           
             <div className="resume-item">
               <h4>온라인MD</h4>
               <h5>2021.03 ~ 2021.09</h5>
               <p><em>세븐제이스 / 대한민국, 경기도</em></p>
             </div>
-            {/* End Resume Item */}
-            <div className="resume-item">
+           
+            {/* <div className="resume-item">
               <h4>바리스타</h4>
               <h5>2020.01 ~ 2020.09</h5>
               <p><em>비엔나커피하우스 / 대한민국, 서울</em></p>
             </div>
-            {/* End Resume Item */}
+            
             <div className="resume-item">
               <h4>바리스타</h4>
               <h5>2018.10 ~ 2019.04</h5>
               <p><em>투썸플레이스 / 대한민국, 서울</em></p>
             </div>
-            {/* End Resume Item */}
+            
             <div className="resume-item">
               <h4>간호보조 아르바이트</h4>
               <h5>2017.07 ~ 2018.04</h5>
               <p><em>41타워안과 / 대한민국, 서울</em></p>
-            </div>
-            {/* End Resume Item */}
-
+            </div> */}
           </div>
         </div>
       </div>

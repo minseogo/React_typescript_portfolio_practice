@@ -36,17 +36,20 @@ const AboutSection: React.FC = () => {
               <div className="col-lg-5">
                 <img src="/img/profile_img.jpg" className="img-fluid rounded-circle" alt="Profile"/>
               </div>
-              <div className="col-lg-7 about-info">
+              <div className="col-lg-7 about-info pt-lg-0 pt-5">
                 <p><strong>Name: </strong> <span> 고민서</span></p>
                 <p><strong>Profile: </strong> <span> 웹퍼블리셔, 프론트엔드</span></p>
-                <p><strong>Email: </strong> <span> gominseo1112@gmail.com</span></p>
                 <p><strong>Phone: </strong> <span> 010 - 5042 - 9412</span></p>
+                <p><strong>Email: </strong> <span> gominseo1112@gmail.com</span></p>
+                <p><strong>Github: </strong> <span> https://github.com/minseogo</span></p>
+                <p><strong>Notion: </strong> <span> boggy-forgery-956</span></p>
+
               </div>
             </div>
 
             <div className="skills-content skills-animation">
               <h5>Skills</h5>
-              <div className='d-flex flex-row flex-wrap align-items-center justify-content-between'>
+              <div className='d-flex flex-row flex-wrap align-items-center'>
                 <div className='col-4 text-center'><i className="bi bi-filetype-html"></i></div>
                 <div className='col-4 text-center'><img className='csslogo' src={Csssvg} alt="Css svg" /></div>
                 <div className='col-4 text-center'><i className="bi bi-filetype-scss"></i></div>
@@ -54,13 +57,14 @@ const AboutSection: React.FC = () => {
                 <div className='col-4 text-center mt-5'><img src={Jquerysvg} alt="Jquery svg" /></div>
                 <div className='col-4 text-center mt-5'><img src={`${process.env.PUBLIC_URL}/img/Cafe24_logo.png`} alt="Cafe24 png" /></div>
                 <div className='col-4 text-center mt-5'><img src={`${process.env.PUBLIC_URL}/img/Gnuboard_logo.png`} alt="Gnuboard png" /></div>
+                <div className='col-4 text-center mt-5'><img className='figmalogo' src={`${process.env.PUBLIC_URL}/img/Figma_logo.png`} alt="Figma png" /></div>
               </div>
 
 
             </div>
           </div>
 
-          <div className="col-md-6">
+          <div className="col-md-6 pt-md-0 pt-5">
             <div className="about-me">
               <h4>About Me</h4>
               <p>
